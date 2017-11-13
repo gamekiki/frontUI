@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/kiki.js"></script>	
+		<script>
+			/////////////////////// kiki.js 실행 코드 /////////////////////
+			try{
+				kiki.setup({
+					appId : "app_Bx8BoU1g00000", //appId
+					userID : "test002", // userId
+					useWidget : true,
+					stopCookie : true,
+					activityReady : function(){
+						console.log("fire act rdy");
+					}
+				});
+			}catch(e){
+				console.log("excepition", e);
+			}finally{
+				
+			}
+			/////////////////// kiki.js 실행 코드 end /////////////////////			
+		</script>
+	</head>
+	<body>
+		<div class="kikiBottom"></div>
+	</body>
+	
+</html>
